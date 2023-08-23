@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ChackWeight(name, height, weight) {
+            this.userName = name;
+            this.userHeight = height;
+            this.userweight = weight;
+            this.minWeight;
+            this.maxWeight;
+
+            this.getResult = function() {
+                this.minWeight = (this.userHeight - 100) * 0.9 - 5;
+                this.maxWeight = (this.userweight -100) * 0.9 + 5;
+
+                if (this.userweight >= this.minWeight && this.userweight <= this.minWeight) {
+                    return '정상몸무게';
+                }else if(this.userweight < this.minWeight){
+                    return '몸무게 미달'
+                }else {
+                    return '몸무게 초과';
+                }
+            }
+            this.getInfo = function() {
+                var str = '';
+                str += '이름 : ' + this.userName + '<br>'
+                str += '키 : ' + this.userHeight + '<br>'
+                str += '몸무게 : ' + this.userweight + '<br>'
+                return str;
+            }
+        }
+        var jang = new ChackWeight('장수벌', 170, 72);
+        var park = new ChackWeight('박달재', 168, 60);
+        
+        document.write(jang.getInfo());
+        document.write(jang.getResult() + '<br><br>');
+
+        document.write(park.getInfo());
+        document.write(park.getResult() + '<br><br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

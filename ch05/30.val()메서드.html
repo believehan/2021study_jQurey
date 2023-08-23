@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var result1 = $('#userName').val();
+            console.log(result1);
+
+            $('#userName').val('이름');
+            var result2 = $('#userName').val();
+            console.log(result2);
+
+            $('#userId').val('1234');
+            var result3 = $('#userId').val();
+            console.log(result3);
+        });
+    </script>
+</head>
+<body>
+    <h1>val() 메서드</h1>
+    이름 : <input type='text' name='user_name' id='userName' value='홍길동'><br>
+    아이디 : <input type='text' name='user_id' id='userId' value='hong'>
+</body>
+</html>

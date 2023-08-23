@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var styleBor1 = {'border' : '2px dashed #f00'};
+            var styleBor2 = {'border' : '2px solid #0f0'};
+            var styleBg1 = {'background-color' : '#FAF4C0'};
+            var styleBg2 = {'background-color' : '#E8D9FF'};
+
+            $('h1').css(styleBg1);
+            $('.txt4').next().children().css(styleBor2);
+            
+        });
+    </script>
+</head>
+<body>
+    <div id='wrap'>
+        <h1>제목</h1>
+        <ul>
+            <li>내용1</li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li class="txt4">내용4</li>
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                </ul>
+            <li>내용5</li>
+        </ul>
+    </div>
+</body>
+</html>

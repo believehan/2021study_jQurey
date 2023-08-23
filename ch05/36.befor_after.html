@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $('#wrap p:eq(1)').after('<p>내용2-1</p>');
+            $('#wrap p:eq(2)').before('<a href="https://google.com">구글</a>');
+
+            // $('<p>내용2-1</p>').insertAfter('#wrap p:eq(1)');
+            // $('<a href="https://google.com">구글</a>').before('#wrap p:eq(2)');
+
+            $('#list').prepend('<li>prepend</li>');
+            $('#list').append('<li>append</li>');
+
+            // $('<li>prepend</li>').prependTo('#list');
+            // $('<li>append</li>').appendTo('#list');
+        });
+    </script>
+</head>
+<body>
+    <div id='wrap'>
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+    </div>
+    <ul id="list">
+        <li>리스트1</li>
+    </ul>
+</body>
+</html>

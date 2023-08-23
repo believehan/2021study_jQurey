@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid orangered;
+            border-collapse: collapse;
+        }
+        table td{
+            border: 1px solid orangered;
+            padding: 20px;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            setTimeout('location.reload()', 500);
+            var colors = ['#00FAF4', '#090BDE', '#F516EA', '#DE4409', '#FFC40A', '#FFA00A', '#B6F0F3'];
+            var rancol = Math.floor(Math.random()*colors.length);
+            $('table td').mouseover(function() {
+                $(this).css('background-color', colors[rancol]);
+            });
+            $('table td').mouseleave(function() {
+                $(this).css('background-color', 'white');
+            });
+           
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

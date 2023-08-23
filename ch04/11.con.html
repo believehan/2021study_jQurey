@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function constr(cpuInfo, ramInfo, hddInfo) {
+            this.cpu = cpuInfo;
+            this.ram = ramInfo;
+            this.hdd = hddInfo;
+
+            this.infor = function() {
+                document.write("제조업체 : 우리전자 <br>");
+                document.write("시스템 종류 : 64bit OS<br>");
+            }
+        }
+        var com1 = new constr('5.6GHz', '8G', '1TB');
+        document.write('cpu : ' + com1.cpu + '<br>');
+        document.write('ram : ' + com1.ram + '<br>');
+        document.write('hdd : ' + com1.hdd + '<br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

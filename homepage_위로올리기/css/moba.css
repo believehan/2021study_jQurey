@@ -1,0 +1,215 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+body {
+    width: auto;
+    font-size: 16px;   
+}
+a {
+    text-decoration: none;
+}
+header {
+    width:100%;
+    background-color: rgb(68, 44, 17);
+}
+header img{
+    display: block;
+    margin: auto;
+}
+
+.navi{
+    width: 100%;
+    text-align: center;
+}
+.navi > li {
+    width: auto;
+    height: 40px;
+    background-color: rgb(43, 87, 22);
+}
+.navi>li>a {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    
+}
+.navi>li:hover {
+    background-color: rgb(216, 74, 49);
+}
+section {
+    width: 100%;
+    height: auto;
+}
+.imgslide {
+    display: none;
+}
+.contents {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.tabmenu {
+    height: 180px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.tabmenu>li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabmenu>li>a {
+    display: block;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.tabmenu>li>a:hover {
+    background-color: #eee;
+}
+.tabmenu>li.active>a{
+    background-color: white;
+    border-right: none;
+}
+.tabmenu>li>div {
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    top: 30px;
+} 
+.tabmenu>li.active div {
+    width: 100%;
+    height: 148px;
+    border: 1px solid #ddd;
+}
+.notice ul {
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 3px;
+    padding-right: 3px  ;
+}
+.notice li:nth-child(2n) {
+    background-color: #ccc;
+}
+.notice li span {
+    float: right;
+}
+.notice li:hover {
+    font-weight: bold;
+}
+.galiery li {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.galiery img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.galiery li:hover {
+    opacity: 0.5;
+}
+.otherwrap {
+    height: 500px;
+    width: 100%;
+}
+.banner {
+    height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner img{
+    height: 250px;
+    width: 100%;
+}
+.bntext {
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    top: 300px;
+    left: 20%;
+}
+.banner img:hover {
+    opacity: 0.5;
+}
+.shortcut {
+    height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shortcut img {
+    height: 250px;
+    width: 100%;
+}
+.sctext {
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    top: 570px;
+    left: 20%;
+}
+.shortcut img:hover {
+    opacity: 0.5;
+}
+footer {
+    position:absolute;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(68, 44, 17);
+    top:955px;
+}
+.btlogo {
+    display: none;
+}
+.copy {
+    height: 80px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 10%;
+}
+.sns {
+    height: 70px;
+    width: 100%;
+    margin-left: 30%;
+}
+.sns ul {
+    float: left;
+}
+.sns li {
+    display: inline-block;
+}
+.sns img {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+.sns img:hover {
+    opacity: 0.5;
+}

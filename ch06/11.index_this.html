@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('.menu1 span').on('click', function(e) {
+                // $('.menu1 span').css('background-color', '#0f0');
+                $(this).css('background-color', '#0f0');
+            });
+            $('.menu2 span').on('click', function(e) {
+                var idx = $('.menu2 span').index(this);
+                $('.menu2 span').eq(idx).css('background-color', '#00f');
+                $('.idxNum').text(idx);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>$(this)</h1>
+    <ul class="menu1">
+        <li><span>메뉴1</span></li>
+        <li><span>메뉴2</span></li>
+        <li><span>메뉴3</span></li>
+    </ul>
+    <h1>index()</h1>
+    <ul class="menu2">
+        <li><span>메뉴1</span></li>
+        <li><span>메뉴2</span></li>
+        <li><span>메뉴3</span></li>
+    </ul>
+    <p>현재 위치의 index번호 : <span class="idxNum"></span></p>
+</body>
+</html>

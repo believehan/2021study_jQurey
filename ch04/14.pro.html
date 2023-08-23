@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function jumsu(name, comex, mathex) {
+            this.userName = name;
+            this.usercomex = comex;
+            this.usermathex = mathex;
+            this.avg;
+        }
+        jumsu.prototype.getInfo = function() {
+        var str = '';
+        str += '이름 : ' + this.userName + '<br>'
+        str += '컴퓨터 점수 : ' + this.usercomex + '<br>'
+        str += '수학점수 : ' + this.usermathex + '<br>'
+        return str;
+        }
+
+        jumsu.prototype.getavg = function() {
+            var useravg = '';
+            this.avg = (this.usercomex + this.usermathex)/2;
+            useravg += '평균점수 : ' + this.avg;
+            return useravg;
+        }
+
+        var jang = new jumsu('홍길동', 84, 70);
+
+        document.write(jang.getInfo());
+        document.write(jang.getavg() + '<br><br>');
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

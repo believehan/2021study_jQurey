@@ -1,0 +1,140 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+body {
+    width: 1400px;
+    font-size: 16px;   
+}
+header {
+    float: left;
+    height: auto;
+    width: 200px;
+}
+h2 {
+    margin: 20px 0 20px;
+    text-align: center;
+}
+nav li {
+    width: 180px;
+    height: 50px;
+    background-color: teal;
+    position: relative;
+    text-align: center;
+}
+.menu li a {
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+section {
+    width: 1000px;
+    height: 650px;
+}
+.imgslide {
+    height: 450px;
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+.imgtxt {
+    height: 40px;
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.5);
+    left: 30%;
+    top: 45%;
+}
+.contents {
+    height: 200px;
+    width: 1000px;
+    position: relative;
+}
+.contents>ul {
+    float: left;
+    height: 180px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.gallery li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.gallery img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+.shortcut {
+    height: 187px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.shortcut img {
+    float: left;
+    height: 180px;
+    width: 300px;
+}
+.sctext {
+    float: right;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    top: 80px;
+    left: 850px;
+}
+footer {
+    height: 100px;
+    width: 1400px;
+    background-color: rgb(68, 44, 17);
+}
+.copy {
+    float: left;
+    height: 100px;
+    width: 740px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.sns {
+    float: right;
+    height: 100px;
+    width: 230px;
+}
+.sns ul {
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.sns li {
+    display: inline-block;
+}
+.sns img {
+    height: 45px;
+    width: 45px;
+    padding: 5px ;
+}
+.sns img:hover {
+    opacity: 0.5;
+}

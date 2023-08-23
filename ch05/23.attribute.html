@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var styleBor1 = {'border' : '2px dashed #f00'};
+            var styleBor2 = {'border' : '2px solid #0f0'};
+            var styleBg1 = {'background-color' : '#FAF4C0'};
+            var styleBg2 = {'background-color' : '#E8D9FF'};
+
+            $('#wrap a[target]').css(styleBg2);
+            $('#member input[type="text"]').css(styleBor1);
+            $('#wrap a[href^="https"]').css(styleBor1);
+            $('#wrap a[href$="net"]').css(styleBg1);
+            $('#wrap a[href*="www"]').css(styleBg2);
+            $('member : text').css(styleBg1);
+            $('#menber : password').css(styleBg2);
+            $('#menber : submit').css(styleBg1);
+            $('#menber : reset').css(styleBg2);
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p><a href="https://www.naver.com" target="_blank">네이버</a></p>
+        <p><a href="https://www.google.com">google</a></p>
+        <p><a href="https://www.daum.net">다음</a></p>
+        <p><a href="https://www.nate.com">네이트</a></p>
+    </div>
+    <form method="GET" action='22.index.html' id='member'>
+        <p>
+            <label for="user-_id">아이디</label>
+            <input type="text" name="user-_id" id='user-_id'>
+        </p>
+        <p>
+            <label for="user-_pw">비밀번호</label>
+            <input type="password" name="user-_pw" id='user-_pw'>
+        </p>
+        <input type="submit" value="">
+    </form>
+</body>
+</html>

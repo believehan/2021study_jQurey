@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $('.slideUp').click(function() {
+                $('.img').slideUp(1000, 'linear')
+            });
+            $('.slidedown').click(function() {
+                $('.img').slideDown(1000, 'linear');
+            });
+            $('.slideToggle').click(function() {
+                $('.img').slideToggle(1000, 'easeOutBounce');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <button class="slideUp">slideUp</button>
+        <button class="slidedown">slidedown</button>
+        <button class="slideToggle">slideToggle</button>
+    </p>
+    <div class="img">
+        <img src="img/cat1.gif">
+    </div>
+</body>
+</html>

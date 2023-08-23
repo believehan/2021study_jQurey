@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            var srcVaule = $('#sec1 img').attr('src');
+            console.log('srcVaule');
+
+            $('#sec1 img').attr({
+                "width" :300,
+                "src" : "img/day3.PNG",     //srcVaule.replace("2.PNG", '3.PNG'),
+                "alt" : "수요일"
+            }).removeAttr("border");
+        });
+    </script>
+</head>
+<body>
+    <h1><strong>속성 삽입과 삭제</strong></h1>
+    <section id="sec1">
+        <h2>이미지 속성</h2>
+        <p><img src="img/day2.PNG" alt="화요일" border='2'></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var result1 = $('#inner_1 p').eq(0).is(':visible');
+            console.log("<p>내용1</p>이 보여지는가?" + result1);
+
+            var result2 = $('#inner_1 p').eq(1).is(':visible');
+            console.log("<p>내용2</p>이 보여지는가?" + result2);
+
+            var result3 = $('#inner_1 p').eq(0).is(':hidden');
+            console.log("<p>내용1</p>이 안보여지는가?" + result3);
+
+            var result4 = $('#inner_1 p').eq(1).is(':hidden');
+            console.log("<p>내용2</p>이 안보여지는가?" + result4);
+
+            var result4 = $('#chk1').is(':checked');
+            console.log("체크1이 선택되어 있는가?" + result1);
+
+            var result4 = $('#chk2').is(':checked');
+            console.log("체크2이 선택되어 있는가?" + result1);
+        })
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <h1>is()메서드</h1>
+        <section id='inner_1'>
+            <h2>문단 태그 영역</h2>
+            <p>내용1</p>
+            <p style="display: none;">내용2</p>
+        </section>
+        <section id="inner_2">
+            <h1>폼 태그 영역</h1>
+            <p>
+                <input type="chekbox" name="chk1" id="chk1" checked>체크1
+                <input type="chekbox" name="chk2" id="chk2">체크2
+            </p>
+        </section>
+    </div>
+</body>
+</html>

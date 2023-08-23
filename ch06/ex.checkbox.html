@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('#chall').click(function() {
+                if($('#chall').prop("checked")){
+                    $('input').prop('checked', true);
+                }else {
+                    $('input').prop('checked', false);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <section>
+    <input type="checkbox" name="ch1">checkbox1<br>
+    <input type="checkbox" name="ch2">checkbox2<br>
+    <input type="checkbox" name="ch3">checkbox3<br>
+    <input type="checkbox" name="ch4">checkbox4<br>
+    </section>
+    <hr>
+    <input type="checkbox" name="chall" id="chall">모두선택<br>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var menu = ['한식', '중식', '양식', '분식'];
+        var ho = ['매움', '안매움']
+        var meal = ['밥', '면', '고기']
+        var tem = ['뜨거움', '차가움']
+        var menuIndex = Math.floor(Math.random()*menu.length);
+        var hoIndex = Math.floor(Math.random()*ho.length);
+        var mealIndex = Math.floor(Math.random()*meal.length);
+        var temIndex = Math.floor(Math.random()*tem.length);
+        var menuSelect = menu[menuIndex];
+        var hoSelect = ho[hoIndex];
+        var mealSelect = meal[mealIndex];
+        var temSelect = tem[temIndex];
+        document.write('오늘의 점심메뉴 : ' + menuSelect);
+        document.write(' ' + hoSelect);
+        document.write(' ' + mealSelect);
+        document.write(' ' + temSelect);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

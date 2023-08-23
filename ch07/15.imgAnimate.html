@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        .wrap{
+            text-align: center;
+        }
+        .img1 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('.img1').hover(function() {
+                $(this).stop().animate({'border-radius' : 100},1000,'easeOutElastic');
+            }, function() {
+                $(this).stop().animate({'border-radius' : 0});
+            });
+            $('.img2').hover(function() {
+                $(this).stop().animate({'border-radius' : 500},1000,'easeOutElastic');
+            }, function() {
+                $(this).stop().animate({'border-radius' : 0});
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <h2>이미지에 마우스를 올려보세요</h2><br>
+        <img class="img1" src="img/cat1.gif"><br>
+        <img class="img2" src="img/cat2.gif"><br>
+    </div>
+</body>
+</html>

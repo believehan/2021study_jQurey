@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $('.fadein').click(function() {
+                $('.img').fadeIn(2000,'linear');
+            });
+            $('.fadeout').click(function() {
+                $('.img').fadeOut(2000,'linear');
+            });
+            $('.fadetoggle').click(function() {
+                $('.img').fadeToggle(1000,'linear');
+            });
+            $('.fadetoin').click(function() {
+                $('.img').fadeTo(2000,0.8);
+            });
+            $('.fadetoout').click(function() {
+                $('.img').fadeTo(2000,0.3);
+            });
+            $('.fadeshi2').hide();
+            $('.fadeshi').click(function() {
+                $('.img').fadeTo(2000, 0.3, function() {
+                    $('.fadeshi').hide();
+                    $('.fadeshi2').show();
+                });
+            });
+            $('.fadeshi2').click(function() {
+                $('.img').fadeTo(2000, 1, function() {
+                    $('.fadeshi').show();
+                    $('.fadeshi2').hide();
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+    <p>
+        <button class="fadein">fadein</button>
+        <button class="fadeout">fadeOut</button>
+        <button class="fadetoggle">fadeToggle</button>
+    </p>
+    <p>
+        <button class="fadetoin">fadeToOut</button>
+        <button class="fadetoout">fadeToOut</button>
+    </p>
+    <p>
+        <button class="fadeshi">fadeToOut</button>
+        <button class="fadeshi2">fadeToIn</button>
+    </p>
+    <div class="img">
+        <img src="img/cat1.gif">
+    </div>
+</body>
+</html>

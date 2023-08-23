@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var result1 = $('#chk1').prop("checked");
+            console.log(result1);
+
+            var result2 = $('#chk2').prop("checked");
+            console.log(result2);
+
+            var result3 = $('#chk3').prop("checked");
+            console.log(result3);
+
+            $('#chk3').prop("checked", true);
+
+            var result4 = $('#chk1').prop("tagName");
+            console.log(result4);
+
+            var result5 = $('#chk1').prop("nodeType");
+            console.log(result4);
+
+            var result6 = $('#sec1').prop("selectedIndex");
+            console.log(result6);
+        })
+    </script>
+</head>
+<body>
+    <h1>prop()메서드</h1>
+    <form method="GET" action="14.even_odd.html" id="form1"></form>
+    <p>
+        <input type="checkbox" name="chk1" id="chk1">chk1
+        <input type="checkbox" name="chk2" id="chk2" checked>chk2
+        <input type="checkbox" name="chk3" id="chk3">chk3
+    </p>
+    <p>
+        <select name="sec1" id="sec1">
+            <option value="opt1">option1</option>
+            <option value="opt2">option2</option>
+            <option value="opt3" selected>option3</option>
+        </select>
+    </p>
+</body>
+</html>

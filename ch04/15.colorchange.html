@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function bgColor1() {
+            var arrColor = ['#CEF279', '#8041D9', '#F361A6', '#FFE08C', '#D5D5D5'];
+            var arrNum = Math.floor(Math.random()*arrColor.length);
+            document.getElementById('theBody').style.backgroundColor=arrColor[arrNum];
+        }
+        function textColor() {
+            var arrColor = ['#B2CCFF', '#4641D9', '#CC3D3D', '#C4B73B', '#8041D9'];
+            var arrNum = Math.floor(Math.random() * arrColor.length);
+            document.getElementById('text').style.color=arrColor[arrNum];
+        }
+    </script>
+</head>
+<body id="theBody">
+    <h1 id="text">배경색상과 글자색 변경 함수</h1>
+    <button onclick="bgColor1();">배경 색 변경</button>
+    <button onclick="textColor();">글자 색 변경</button>
+</body>
+</html>

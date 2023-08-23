@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        li {
+            float: left;
+            margin: 10px;
+            list-style:none;
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            padding: 10px 20px;
+            text-align: center;
+            
+        }
+    </style>
+    <script>
+        $(function() {
+            $('li a').hover(function() {
+                var bgColor = $(this).attr("data-bg");
+                $(this).animate({'background-color' : bgColor, 'color' : 'white'}, 1000);
+            }, function() {
+                $(this).stop().animate({'background-color' : 'blue', 'color' : 'black'},800);
+
+            });
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="#" data-bg="#5CD1E5">Home</a></li>
+        <li><a href="#" data-bg="#FAED7D">About</a></li>
+        <li><a href="#" data-bg="#FFB2D9">Portfolio</a></li>
+        <li><a href="#" data-bg="#B7F0B1">content</a></li>
+    </ul>
+</body>
+</html>

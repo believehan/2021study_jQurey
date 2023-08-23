@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('ul li').on({
+                'mouseover' : function() {
+                    $(this).css('background-color', 'skyblue');
+            },
+                'mouseout' : function() {
+                    $(this).css('background', 'none');
+            }
+            });
+
+            // $('.m1').hover(function() {
+            //     $('.m1').css('background-color','skyblue')
+            // });
+            // $('.m1').mouseout(function() {
+            //     $('.m1').css('background-color','white')
+            // });
+            // $('.m2').hover(function() {
+            //     $('.m2').css('background-color','skyblue')
+            // });
+            // $('.m2').mouseout(function() {
+            //     $('.m2').css('background-color','white')
+            // });
+            // $('.m3').hover(function() {
+            //     $('.m3').css('background-color','skyblue')
+            // });
+            // $('.m3').mouseout(function() {
+            //     $('.m3').css('background-color','white')
+            // });
+            // $('.m4').hover(function() {
+            //     $('.m4').css('background-color','skyblue')
+            // });
+            // $('.m4').mouseout(function() {
+            //     $('.m4').css('background-color','white')
+            // });
+        });
+    </script>
+    <style>
+        * {margin: 0; padding: 0; text-decoration: none;}
+        body{ padding: 20px;}
+        li {
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            float: left;
+            list-style: none;
+            margin-right: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="m1">menu1</li>
+        <li class="m2">menu2</li>
+        <li class="m3">menu3</li>
+        <li class="m4">menu4</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <style>
+        .ju {color:skyblue}
+        .aqua{color: aqua;}
+    </style>
+    <script>
+        $(function() {
+            $('#sec1').html('<p>한믿음</p>');
+            $(".ju").text("경기도 부천시 부천로");
+            $("a").html('<a href ="https://www.google.com">구글</a>');
+            $('#man').prop("checked", true);
+            $('ul li').addClass('aqua')
+        });
+    </script>
+</head>
+<body>
+    <section id="sec1"></section>
+    <p class="ju">주소</p>
+    <a href="#">네이버</a>
+    <p>
+        <input type="radio" name="jan" id="man">남자
+        <input type="radio" name="jan" id="woman">여자
+    </p>
+    <ul>
+        <li>html5</li>
+        <li>css3</li>
+        <li>javascript</li>
+        <li>jQuery</li>
+    </ul>
+</body>
+</html>

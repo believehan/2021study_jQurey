@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $('#userId, #userPw').on('focus', function() {
+                $(this).css('background-color', 'pink');
+            });
+            $('#userId, #userPw').on('blur', function() {
+                $(this).css('background-color', 'white');
+            });
+
+            $('#form2').on('focusin', function() {
+                $('#userId2, #userPw2').css('background-color', 'blue');
+            });
+            $('#form2').on('focusin', function() {
+                $('#userId2, #userPw2').css('background-color', 'white');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>focuse / blur</h1>
+    <form method="GET" action="#">
+        <p>
+            <label for="userId">ID : </label>
+            <input type="text" name="user_id" id="userId">
+        </p>
+        <p>
+            <label for="userPw">PW : </label>
+            <input type="password" name="user_pw" id="userPw">
+        </p>
+    </form>
+
+    <h1>focusein / focuseout</h1>
+    <form method="GET" action="#" id="form2">
+        <p>
+            <label for="userId2">ID : </label>
+            <input type="text" name="user_id" id="userId2">
+        </p>
+        <p>
+            <label for="userPw2">PW : </label>
+            <input type="password" name="user_pw" id="userPw2">
+        </p>
+    </form>
+</body>
+</html>

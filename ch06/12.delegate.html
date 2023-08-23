@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('#btn1').delegate(".btn_1", 'mouseover focus', function() {
+                alert("버튼1에 mouseover발생");
+            });
+            $(document).one('mouseover focus', ".btn_2", function() {
+                alert("버튼2에 이벤트발생");
+            });
+            $('.del').on('click', function() {
+                $('#btn1').undelegate('.btn_1','mouseover focus');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="btn1">
+        <button class="btn_1">버튼1</button>
+    </p>
+    <p><button class="del">이벤트 해지</button></p>
+    <p>
+        <button class="btn_2">버튼2</button>
+    </p>
+</body>
+</html>

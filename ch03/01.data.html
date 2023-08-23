@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var today = new Date();
+        var nowMonth = today.getMonth();
+        var nowDate = today.getDate();
+        var nowDay = today.getDay();
+        document.write("<h1>오늘 날짜 정보</h1>");
+        document.write("<h3>현재 월 : " + nowMonth, "</h3>");
+        document.write("<h3>현재 일 : " +  nowDate, "</h3>");
+        document.write("<h3>현재 요일 : " +  nowDay, "</h3>");
+
+        var worldcup = new Date(2024, 9, 20);
+        var worldMonth = worldcup.getMonth();
+        var worldDate = worldcup.getDate();
+        var worldDay = worldcup.getDay();
+        document.write("<h1>파리 월드컵 날짜 정보</h1>");
+        document.write("<h3>월드컵 년도 : " + worldcup.getFullYear(), "<h3>");
+        document.write("<h3>월드컵 월 : " + worldMonth, "<h3>");
+        document.write("<h3>월드컵 일 : " + worldDate, "<h3>");
+        if (worldDay == 0){
+            worldDay="일";
+        }
+        else if (worldDay == 1){
+            worldDay="월";
+        }
+        else if (worldDay == 2){
+            worldDay="화";
+        }
+        else if (worldDay == 3){
+            worldDay="수";
+        }
+        else if (worldDay == 4){
+            worldDay="목";
+        }
+        else if (worldDay == 5){
+            worldDay="금";
+        }
+        else if (worldDay == 6){
+            worldDay="토";
+        }
+        document.write("<h3>월드컵 요일 : " + worldDay, "<h3>");
+
+        switch(worldDay) {
+            case 0:
+                document.write('<img src="../img/day0.PNG" alt="일요일">');
+                break;
+            case 1:
+                document.write('<img src="../img/day1.PNG" alt="월요일">');
+                break;
+            case 2:
+                document.write('<img src="../img/day2.PNG" alt="화요일">');
+                break;
+            case 3:
+                document.write('<img src="../img/day3.PNG" alt="수요일">');
+                break;
+            case 4:
+                document.write('<img src="../img/day4.PNG" alt="목요일">');
+                break;
+            case 5:
+                document.write('<img src="../img/day5.PNG" alt="금요일">');
+                break;
+            case 6:
+                document.write('<img src="../img/day6.PNG" alt="토요일">');
+                break;
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

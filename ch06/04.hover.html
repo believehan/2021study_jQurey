@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var styleBor1 = {'border' : '2px dashed #f00'};
+            var styleBor2 = {'border' : '2px solid #0f0'};
+            var styleColor1 = {'color' : 'red'};
+            var styleColor2 = {'color' : 'green'};
+            var styleBg1 = {'background-color' : '#FAF4C0'};
+            var styleBg2 = {'background-color' : '#E8D9FF'};
+            $('.btn1').hover(function() {
+                $('.txt1').css(styleBg1);
+            }, function() {
+                $('.txt1').css({'background' : 'none'});
+            });
+
+            $('.btn2').on({
+                'mauseover' : function() {
+                    $('.txt2').css(styleColor1);
+                },
+                'mouseout' : function() {
+                    $('.txt2').css({'color' : 'black'});
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="btn1">버튼1</button>
+    <p class="txt1">내용1</p>
+    <button class="btn2">버튼2</button>
+    <p class="txt2">내용2</p>
+    <button class="btn3">버튼3</button>
+    <p class="txt3">내용3</p>
+</body>
+</html>

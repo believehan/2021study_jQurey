@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var arr1 = ['서울', '부산', '대전', '전주', '부산'];
+            var arr2 = ['한국', '미국', '중국', '일본'];
+
+            var idxNum = $.inArray('부산', arr1);
+            document.write('부산의 index : ' + idxNum + '<br>');
+
+            idxNum = $.inArray('부산', arr1, 2);
+            document.write('부산의 index : ' + idxNum + '<br>');
+
+            var obj1 = $.isArray(arr1);
+            document.write('arr1이 객체인가? : ' + obj1 + '<br>');
+
+            $.merge(arr2, arr1);
+            document.write(arr2);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

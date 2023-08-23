@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        var months = ['january', 'February', 'March', 'April', 'May', 'June'];
+
+        var months_map = $.map(months,function(val, i) {
+            return val.substring(0,3);
+        });
+
+        var months_grep = $.grep(months, function(value, j) {
+            if(value == 'May') {
+                return true;
+            }else {
+                return false;
+            }
+        })
+
+        $(function() {
+            // document.write(months_map);
+            // document.write('<br>');
+            // document.write(months_grep);
+
+            $.map(months,function(val, i) {
+                document.write(val.substring(0,3) + ', ');
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

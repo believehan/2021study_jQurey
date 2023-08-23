@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        div {
+            width: 500px;
+        }
+        .content {
+            background-color: dodgerblue;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('.hide').click(function() {
+                $('.content').hide(2000,'easeOutBounce');
+            });
+            $('.show').click(function() {
+                $('.content').show(2000,'linear');
+            });
+            $('.toggle').click(function() {
+                $('.content').toggle(2000,'swing');
+            });
+            $('.imgBtn').click(function() {
+                $('.img').toggle(2000,'swing');
+            });
+        })
+    </script>
+</head>
+<body>
+    <p>
+        <button class="hide">hide</button>
+        <button class="show">show</button>
+        <button class="toggle">toggle</button>
+        <button class="imgBtn">img</button>
+    </p>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iste deserunt, molestiae reiciendis quia sit reprehenderit minus mollitia at amet eaque? Enim itaque dignissimos error nemo ratione consectetur minima rerum?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita nobis praesentium magnam voluptatibus impedit necessitatibus, itaque, corrupti voluptatum alias porro, aperiam quisquam accusantium corporis. Eos aliquam blanditiis ea iusto.
+    </div>
+    <div class="img">
+        <img src="img/cat1.gif">
+    </div>
+</body>
+</html>

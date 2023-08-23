@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            var styleBor1 = {'border' : '2px dashed #f00'};
+            var styleBor2 = {'border' : '2px solid #0f0'};
+            var styleBg1 = {'background-color' : '#FAF4C0'};
+            var styleBg2 = {'background-color' : '#E8D9FF'};
+
+            // $('#wrap h1').css(styleBg2);
+            $('#wrap > h1').css(styleBor1);
+            // $('#wrap > section').children().css({'background-color' : '#E8D9FF', 'border' : '2px solid #0f0'});
+            $('#wrap > section').children().css(styleBg1).css(styleBor2);
+        });
+    </script>
+</head>
+<body>
+    <div id='wrap'>
+        <h1>하위요소 선택자</h1>
+        <p>내용</p>
+        <section>
+            <h2>하위요소 선택자</h2>
+            <p>내용2</p>
+        </section>
+    </div>
+</body>
+</html>

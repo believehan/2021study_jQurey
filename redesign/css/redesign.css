@@ -1,0 +1,317 @@
+@charset "UTF-8";
+* {
+	margin:0;
+	padding:0;
+    list-style:none;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.menu {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+}
+.nav_log {
+    width: 25%;
+    float: right;
+    padding: 10px;
+}
+.nav_log li{
+    font-size: 10px;
+    display: inline-block;
+    padding: 0 5px 0;
+}
+.nav_log li.bo {
+    border-right: 1px solid rgba(0, 0, 0, 0.253);
+    width: 40px;
+}
+.nav_log li a {
+    color: black;
+}
+.nav {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.nav img {
+    margin: 50px 20px 30px;
+    float: left;
+}
+.navi {
+    float: right;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5%;
+
+}
+.navi li {
+    display: inline-block;
+    padding-left: 3vw;
+    font-weight:700;
+    font-size: 1vw;
+    color: black;
+}
+.navi li a {
+    color: black;
+}
+.submenu {
+    width: 100%;
+    height: 70px;
+    display: none;
+    position: absolute;
+}
+.submenu li {
+    float: left;
+    padding: 10px 14px 10px 0;
+    margin-left: 10px;
+    text-align: center;
+}
+.submenu>li>a{
+    line-height: 35px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+.dk ul{
+    position: absolute;
+    left: 20%;
+}
+.gall ul{
+    position: absolute;
+    left: 30%;
+}
+.ad ul{
+    position: absolute;
+    left: 40%;
+}
+.on ul{
+    position: absolute;
+    left: 57%;
+}
+.end ul{
+    position: absolute;
+    left: 57%;
+}
+.viewer {
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+}
+.imgslide {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.imgslide>ul{ 
+    width: 6665px;
+    height: 500px;
+    font-size: 0; 
+} 
+.imgslide>ul>li{
+    display: inline-block; 
+}
+.imgslide img {
+    width: 1333px;
+    height: 500px;
+}
+.mid {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+.tiroad {
+    margin: 0 auto;
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+}
+.tiroad ul {
+    float: right;
+}
+.tiroad li {
+    float: left;
+}
+.ticket a{
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    padding-right: 10px;
+}
+.time_box {
+    width: 17%;
+    height: 280px;
+    margin-top: 5px;
+    margin-right: 15%;
+    border: 1px solid;
+    float: right;
+}
+.time_box h2 {
+    margin: 15px 10px 20px;
+    text-align: center;
+}
+.open_close li{
+    text-align: center;
+    font-size: 25px;
+}
+.open_close span {
+    font-size: 10px;
+    text-align: left;
+}
+.notice {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15%;
+    border: 1px solid;
+    height: 280px;
+    width: 27%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.notice>li>a{
+    font-size: 30px;
+    display: block;
+    padding: 20px;
+}
+.board li a{
+    padding: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board li span {
+    float: right;
+}
+.exhibition {
+    float: left;
+    width: 24%;
+    height: 280px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.ban img {
+    width: 90%;
+    display: inline;
+}
+.ban>li {
+    position: relative;
+    width: 46%;
+    line-height: 0;
+    float: left;
+    padding: 7px;
+    text-align: center;
+}
+.ban li img:hover{
+    opacity: 0.3;
+}
+li .ban_tit {
+    position: absolute;
+    line-height: 160%;
+    font-size: 20px;
+    font-weight: 600;
+    left: 10%;
+}
+li.ban02 .ban_tit{
+    color: blue;
+}
+.ban03 .ban_tit{
+    color: blue;
+}
+.ban04 .ban_tit{
+    color: white;
+}
+.shortcut {
+    clear: both;
+    width: 70%;
+    height: 100px;
+    position: relative;
+    margin: 10px auto;
+}
+.shortcut ul {
+    text-align: center;
+    width: 100%;
+}
+.shortcut ul li {
+    float: left;
+    width: 8%;
+    align-items: center;
+    margin-left: 4.5% ;
+}
+.shortcut li a samp {
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+footer {
+    clear: both;
+    border-top: solid 1px #eaeaea;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.foot {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+}
+.ft {
+    float: left;
+    margin: 30px 0 30px;
+}
+.hidden {
+    display: none;
+}
+.sub {
+    width: 20%;
+    margin-top: 30px;
+    float: right;
+}
+.ft_sns {
+    padding-right: 10px;
+    position: absolute;
+    right: 30%;
+}
+.sub div{
+    float: left;
+}
+.clearfix li{
+    float: left;
+    padding: 5px;
+    display: block;
+}
+.fm_site {       
+    position: absolute;
+    right: 15%;
+    float: right;
+    text-align: right;
+    display: block;
+    padding-top: 10px;
+}
+#fm_site{
+    padding: 5px 4% 5px;
+    margin-left: 3px;
+    width: 75%;
+    font-size: 12px;
+    display: inline-block;
+}
+.fm_site a {
+    display: inline;
+}
+.btn_go {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #112e22;
+    color: #fff;
+    font-size: 12px;
+    width: 20%;
+    padding: 3px 10px 4px;
+    font-weight: 600;
+}
